@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Physics</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="heigthformula">hmax = v^2 * sina^2 / 2g</string>
+    <string name="distanceformula">distance = v^2 * sin2a / g</string>
+</resources>
