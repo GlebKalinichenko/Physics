@@ -13,6 +13,12 @@ public class PhysicsModel {
     private int angleGrad;
     private int speed;
 
+    /**
+    * calculation max heigth in radians
+    * @param double speed    Speed of body
+    * @param double rad      Angle in radias
+    * @return double          Max heigth
+    * */
     public double calcHeigthRad(double speed, double rad){
         double powerSin = Math.sin(rad) * Math.sin(rad);
         Log.d(TAG, String.valueOf(powerSin));
@@ -22,6 +28,12 @@ public class PhysicsModel {
         return heigth;
     }
 
+    /**
+     * calculation max heigth in degrees
+     * @param double speed    Speed of body
+     * @param double rad      Angle in degrees
+     * @return double         Max heigth
+     * */
     public double calcHeigthAngle(double speed, double angle){
         double rad = Math.toRadians(angle);
         Log.d(TAG, "Angle in rad " + String.valueOf(rad));
@@ -34,6 +46,12 @@ public class PhysicsModel {
         return heigth;
     }
 
+    /**
+     * calculation max distance in radians
+     * @param double speed    Speed of body
+     * @param double rad      Angle in radias
+     * @return double         Max distance
+     * */
     public double calcDistanceRad(double speed, double rad){
         double powerSin = Math.sin(2 * rad);
         Log.d(TAG, String.valueOf(powerSin));
@@ -43,6 +61,12 @@ public class PhysicsModel {
         return heigth;
     }
 
+    /**
+     * calculation max heigth in degrees
+     * @param double speed    Speed of body
+     * @param double rad      Angle in degrees
+     * @return double         Max distance
+     * */
     public double calcDistanceAngle(double speed, double angle){
         double rad = Math.toRadians(2 * angle);
         Log.d(TAG, "Angle in rad in distance " + String.valueOf(rad));

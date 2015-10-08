@@ -36,11 +36,6 @@ public class Physics extends Activity {
         radCheckBox = (CheckBox) findViewById(R.id.radCheckBox);
         angleCheckBox = (CheckBox) findViewById(R.id.angleCheckBox);
 
-//        double value = Math.sin(Math.toRadians(30.0));
-//        double values = Math.sin(Math.toRadians(45.0));
-//        Log.d(TAG, String.valueOf(value));
-//        Log.d(TAG, String.valueOf(values));
-
         calcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
