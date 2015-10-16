@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Physics.iml" filepath="$PROJECT_DIR$/Physics.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/physicsmodel/physicsmodel.iml" filepath="$PROJECT_DIR$/physicsmodel/physicsmodel.iml" />
     </modules>
   </component>
 </project>
