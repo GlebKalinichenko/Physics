@@ -21,12 +21,12 @@ public class PhysicsModel {
     /**
      * calculation max heigth in degrees
      * @param double speed    Speed of body
-     * @param double rad      Angle in degrees
+     * @param double angle    Angle in degrees
      * @return double         Max heigth
      * */
-    public double calcHeigthDegree(double speed, double angle){
+    public double calcHeigthDegree(double speed, double degree){
         //heigth = (speed^2 * sin(rad)^2) / 2G rad - fromDegreeToRad
-        return ((speed * speed) * (Math.sin(fromDegreeToRad(angle, 1)) * Math.sin(fromDegreeToRad(angle, 1)))) / (2 * G);
+        return ((speed * speed) * (Math.sin(fromDegreeToRad(degree, 1)) * Math.sin(fromDegreeToRad(degree, 1)))) / (2 * G);
     }
 
     /**
@@ -43,12 +43,12 @@ public class PhysicsModel {
     /**
      * calculation max distance in degrees
      * @param double speed    Speed of body
-     * @param double rad      Angle in degrees
+     * @param double angle      Angle in degrees
      * @return double         Max distance
      * */
-    public double calcDistanceDegree(double speed, double angle){
+    public double calcDistanceDegree(double speed, double degree){
         //distance = (speed^2 * sin(rad)^2) / G, rad - fromDegreeToRad
-        return ((speed * speed) * Math.sin(fromDegreeToRad(angle, 2))) / G;
+        return ((speed * speed) * Math.sin(fromDegreeToRad(degree, 2))) / G;
     }
 
     /**
@@ -56,7 +56,7 @@ public class PhysicsModel {
      * @param double angle       Angle in degree
      * @return double            Angle in rad
      * */
-    public double fromDegreeToRad(double angle, int coefAngle){
-        return Math.toRadians(coefAngle * angle);
+    public double fromDegreeToRad(double degree, int coefAngle){
+        return Math.toRadians(coefAngle * degree);
     }
 }
